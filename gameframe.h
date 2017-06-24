@@ -17,7 +17,7 @@ class GameFrame {
 	virtual void DrawGameMain( );
 	virtual void DrawGameClear( );
 	virtual void DrawGameOver( );
-	virtual void LoadFiles( )  {}
+	virtual void LoadFiles( ) throw( int ) {}
 	virtual void InitStage( ) {}
 
 	GAME_STATE g_state;								//表示している画面モードを表す変数

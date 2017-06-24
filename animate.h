@@ -8,26 +8,26 @@
 using namespace std;
 
 class Animate {
-	struct ANIM_PAT {
+	//アニメのパターンの構造体
+	struct ANIM_PATTERN {
 		vector<int> gh_list;
 		int anim_gap;
-		ANIM_PAT( ) {
+		ANIM_PATTERN( ) {
 			anim_gap = 1;
 		}
 	};
-	vector<ANIM_PAT> ap_list;
+	vector<ANIM_PATTERN> ap_list;
 
 public:
 	Animate( ) {
-		ap_list.push_back( ANIM_PAT( ) );
+		ap_list.push_back( ANIM_PATTERN( ) );
 	}
 
-	int SetImage( int apid, int g_handle );
-	int SetGap( int apid, int gap );
+	int SetImage( int ap_id, int g_handle );
+	int SetGap( int ap_id, int gap );
 
-	void Draw( int apid, int x, int y );  
-	void Draw( int apid, int x, int y, float rad );
-
+	void Draw( int ap_id, int x, int y );  
+	void Draw( int ap_id, int x, int y, float radius );
 };
 
 #endif // !__ANIMATE_H__
