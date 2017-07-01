@@ -1,4 +1,4 @@
-#include "animate.h"
+#include "Animate.h"
 
 //‰æ‘œ‚ÌƒZƒbƒg
 int Animate::SetImage( int ap_id, int g_handle ) {

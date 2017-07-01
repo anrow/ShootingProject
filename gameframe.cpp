@@ -1,4 +1,4 @@
-#include "gameframe.h"
+#include "GameFrame.h"
 
 void GameFrame::DoMainLoop( int scMode ) {
 
@@ -66,7 +66,6 @@ unsigned int GameFrame::GetAnimCount( ) {
 unsigned int GameFrame::animCounter = 0;
 
 void GameFrame::DrawGameTitle( ) {
-	
 }
 void GameFrame::DrawGameMain( ) {
 }

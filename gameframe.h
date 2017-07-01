@@ -2,7 +2,7 @@
 #define __GAME_FRAME_H__
 
 #include <DxLib.h>
-#include "define.h"
+#include "Define.h"
 
 enum GAME_STATE {
 	NONE,

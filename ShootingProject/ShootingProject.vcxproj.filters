@@ -15,24 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\main.cpp">
+    <ClCompile Include="..\Animate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\gameframe.cpp">
+    <ClCompile Include="..\GameFrame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\animate.cpp">
+    <ClCompile Include="..\Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PlayerControl.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\gameframe.h">
+    <ClInclude Include="..\Animate.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\define.h">
+    <ClInclude Include="..\Define.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\animate.h">
+    <ClInclude Include="..\GameFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PlayerControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CharaData.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

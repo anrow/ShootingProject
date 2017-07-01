@@ -2,7 +2,7 @@
 #define __ANIMATE_H__
 
 #include <DxLib.h>
-#include "gameframe.h"
+#include "GameFrame.h"
 #include <vector>
 
 using namespace std;
@@ -31,4 +31,3 @@ public:
 };
 
 #endif // !__ANIMATE_H__
-

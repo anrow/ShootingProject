@@ -1,46 +1,28 @@
-#include "gameframe.h"
+#include "GameFrame.h"
 #include "Animate.h"
+#include "PlayerControl.h"
 
-/*int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow ) {
-	GameFrame *gf = new GameFrame( );
-
-	gf -> DoMainLoop( TRUE );
-
-	delete gf;
-}*/
-
-class CurGame : public GameFrame {
-	void DrawGameTitle( );
-	Animate player;
+class ShootGame : public GameFrame {
+	PlayerControl playerControl;
 	void Loadfiles( ) throw( int );
+	void InitStage( );
 	void DrawGameMain( );
 };
 
-
-
-void CurGame::DrawGameTitle( ) {
-	int _color = GetColor( 0, 255, 128 );
-	DrawBox( 0, 0, 640, 240, _color, TRUE );
-
-	
+void ShootGame::Loadfiles( ) throw( int ) {
+	playerControl.Loadfiles( );
 }
 
-void CurGame::Loadfiles( ) throw( int ) {
-	int g_handle[ 8 ];
-	if( LoadDivGraph( "Resources\player.bmp", 8, 4, 2, 64, 64, g_handle ) == -1 ) {
-		throw( -1 );
-	}
-	player.SetImage( 0, g_handle[ 0 ] );
+void ShootGame::InitStage( ) {
+	playerControl.Init( );
 }
 
-void CurGame::DrawGameMain( ) {
-	
+void ShootGame::DrawGameMain( ) {
+	playerControl.Move( );
 }
 
-int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow ) {
-	CurGame *cg = new CurGame( );
-
-	cg -> DoMainLoop( TRUE );
-
-	delete cg;
+int WINAPI WinMain( HINSTANCE hI, HINSTANCE hP, LPSTR lpC, int nC ) {
+	ShootGame *sg = new ShootGame( );
+	sg -> DoMainLoop( TRUE );
+	delete sg;
 }

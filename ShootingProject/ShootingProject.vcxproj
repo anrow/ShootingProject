@@ -158,14 +158,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\animate.cpp" />
-    <ClCompile Include="..\gameframe.cpp" />
-    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Animate.cpp" />
+    <ClCompile Include="..\GameFrame.cpp" />
+    <ClCompile Include="..\Main.cpp" />
+    <ClCompile Include="..\PlayerControl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\animate.h" />
-    <ClInclude Include="..\define.h" />
-    <ClInclude Include="..\gameframe.h" />
+    <ClInclude Include="..\Animate.h" />
+    <ClInclude Include="..\CharaData.h" />
+    <ClInclude Include="..\Define.h" />
+    <ClInclude Include="..\GameFrame.h" />
+    <ClInclude Include="..\PlayerControl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
